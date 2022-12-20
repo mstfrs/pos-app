@@ -1,0 +1,3 @@
+.card-item{
+    @apply bg-green-700 px-6 py-10 text-white hover:cursor-pointer hover:bg-pink-600 transition-all text-center min-w-[145px] flex justify-center;
+}
