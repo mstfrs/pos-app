@@ -25,7 +25,7 @@ export const StatisticPage = () => {
  
 
   const asyncFetch = () => {
-    fetch('http://localhost:5001/api/bills/get-all')
+    fetch(process.env.REACT_APP_SERVER_URL+"/api/bills/get-all")
       .then((response) => response.json())
       .then((json) => setData(json))
       .catch((error) => {
