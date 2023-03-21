@@ -43,7 +43,7 @@ router.post("/add-product", async (req,res)=>{
     try {
         const newProduct= new Product(req.body);
         await newProduct.save();
-        res.status(200).json(res)
+        res.status(200).json(newProduct)
     } catch (error) {
         res.status(400).json(error)
     }

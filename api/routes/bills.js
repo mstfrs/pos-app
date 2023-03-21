@@ -20,7 +20,7 @@ router.post("/add-bill",async(req,res)=>{
     try {
         const newProduct=new Bill(req.body);
         await newProduct.save();
-        res.status(200).json("Item added successfully.")
+        res.status(200).json(newProduct)
         
     } catch (error) {
         res.status(400).json(error)
